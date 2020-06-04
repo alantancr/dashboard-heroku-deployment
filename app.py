@@ -1,6 +1,4 @@
-## Plotly Dash Tutorial
 
-# -*- coding: utf-8 -*-
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -9,7 +7,6 @@ import os
 
 server = Flask(__name__)
 server.secret_key = os.environ.get('secret_key', 'secret')
-
 app = dash.Dash(name = __name__, server = server)
 app.config.supress_callback_exceptions = True
 
